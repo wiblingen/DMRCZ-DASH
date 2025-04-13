@@ -238,17 +238,6 @@ if(empty($_POST['func'])) {
 		    $fileList = array_filter(array("/etc/dstar-radio.mmdvmhost", "/etc/dstar-radio.dstarrepeater"), 'file_exists');
 		    if ($file = array_shift($fileList)) {
 	    ?>
-		<div>
-		    <div style="background-color: #FFCC00; color: #000;text-align:center; padding:10px 0; margin: 0px 0px 10px 0px; width: 100%;">
-				<p>
-				<b>IMPORTANT</b><br />
-				<br />
-				Your configuration needs to be updated.<br />
-				Go to the <a href="/admin/configure.php" style="text-decoration:underline;font-weight:bold;">Configuration Page</a> and click on any "Apply Changes" button.<br />
-				<br />This message will disappear once this has been completed.<br />
-				</p>
-		    </div>
-		</div>
 	    <?php }
 	        }
 	    }
